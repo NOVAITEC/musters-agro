@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over Ons | Musters Agro</title>
+    <meta name="description"
+        content="Leer meer over Musters Agro en eigenaar Mike Musters. Uw nuchtere, betrouwbare partner voor grond- en groenwerk in Noord-Brabant.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Removed old page-header style to use global one from style.css */
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--color-text-light);
+        }
+
+        .about-image {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            aspect-ratio: 4/5;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .value-card {
+            background: var(--color-bg-alt);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+        }
+
+        .value-card i {
+            color: var(--color-secondary);
+            width: 40px;
+            height: 40px;
+            margin-bottom: 1rem;
+        }
+
+        .about-cta {
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Musters<span>Agro</span></a>
+
+            <nav class="nav-desktop">
+                <a href="index.html#diensten">Diensten</a>
+                <a href="over-ons.html">Over Ons</a>
+                <a href="projecten.html">Projecten</a>
+                <a href="reviews.html">Reviews</a>
+            </nav>
+
+            <a href="tel:0619550775" class="btn btn-primary btn-nav">
+                <i data-lucide="phone"></i> 06-19550775
+            </a>
+
+            <button class="menu-toggle" aria-label="Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html#diensten" class="mobile-link">Diensten</a>
+        <a href="over-ons.html" class="mobile-link">Over Ons</a>
+        <a href="projecten.html" class="mobile-link">Projecten</a>
+        <a href="reviews.html" class="mobile-link">Reviews</a>
+        <a href="tel:0619550775" class="btn btn-primary">Bel Direct</a>
+    </div>
+
+    <main>
+        <section class="page-header page-header-about">
+            <div class="container">
+                <h1 class="page-title">Over Ons</h1>
+                <p>Maak kennis met het gezicht achter Musters Agro.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container about-content">
+                <div class="about-text">
+                    <span class="section-tag">Jouw vakman in Noord-Brabant</span>
+                    <h2>Nuchter, Hardwerkend en Oplossingsgericht</h2>
+                    <p>Welkom bij Musters Agro. Mijn naam is Mike Musters, en ik ben de drijvende kracht achter dit
+                        bedrijf. Als eenmanszaak sta ik garant voor persoonlijk contact, korte lijntjes en een
+                        no-nonsense aanpak.</p>
+                    <p>Of het nu gaat om het verwijderen van een hardnekkige boomstobbe in een volle achtertuin, of het
+                        compleet ontruimen en frezen van een groot perceel; ik haal mijn voldoening uit het leveren van
+                        strak werk. Met mijn eigen compacte en professionele machinepark kan ik op plekken komen waar
+                        groter materieel vastloopt.</p>
+                    <p>Ik geloof sterk in de Brabantse mentaliteit: afspraak is afspraak. U weet bij mij altijd waar u
+                        aan toe bent, zonder onverwachte verrassingen achteraf. Eén aanspreekpunt voor uw hele project.
+                    </p>
+                    <a href="tel:0619550775" class="btn btn-primary about-cta">Neem contact met mij
+                        op</a>
+                </div>
+
+                <div class="about-image">
+                    <!-- Placeholder voor een professionele of nano pro gegenereerde foto van Mike of de tractor in actie -->
+                    <img src="assets/ph-mike.svg"
+                        alt="Foto Mike Musters - Eigenaar Musters Agro (placeholder)">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="values-grid">
+                    <div class="value-card">
+                        <i data-lucide="handshake"></i>
+                        <h3>Eén Aanspreekpunt</h3>
+                        <p>Van de eerste offerte tot de laatste bezemstreek, u heeft altijd direct contact met mij.</p>
+                    </div>
+                    <div class="value-card">
+                        <i data-lucide="check-circle"></i>
+                        <h3>Vakmanschap</h3>
+                        <p>Jarenlange ervaring en de juiste compacte machines voor elke klus.</p>
+                    </div>
+                    <div class="value-card">
+                        <i data-lucide="clock"></i>
+                        <h3>Afspraak = Afspraak</h3>
+                        <p>Geen vage beloftes. Wij leveren binnen de afgesproken tijd en budget.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section">
+            <div class="container text-center">
+                <h2>Klaar om uw project te bespreken?</h2>
+                <div class="cta-buttons">
+                    <a href="tel:0619550775" class="btn btn-primary btn-large">
+                        <i data-lucide="phone"></i> 06-19550775
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Same footer as index -->
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3 class="footer-brand">Musters<span>Agro</span></h3>
+                <p>Eenmanszaak gevestigd in Noord-Brabant. Uw specialist in grondverzet, groenverwijdering en
+                    miniloonwerk.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Diensten</h4>
+                <ul>
+                    <li><a href="miniloonwerk.html">Miniloonwerk</a></li>
+                    <li><a href="groenverwijdering.html">Groenverwijdering</a></li>
+                    <li><a href="boomstobben.html">Boomstobben frezen</a></li>
+                    <li><a href="grondwerk.html">Grondwerk</a></li>
+                    <li><a href="terreinrenovatie.html">Terreinrenovatie</a></li>
+                    <li><a href="trommelzeef.html">Trommelzeefverhuur</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="contact-list">
+                    <li><i data-lucide="map-pin"></i> Regio Noord-Brabant</li>
+                    <li><i data-lucide="phone"></i> <a href="tel:0619550775">06-19550775</a></li>
+                    <li><i data-lucide="mail"></i> <a href="mailto:info@mustersagro.nl">info@mustersagro.nl</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy;
+                <script>document.write(new Date().getFullYear())</script> Musters Agro. Alle rechten voorbehouden.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

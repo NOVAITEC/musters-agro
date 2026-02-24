@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klantreviews | Musters Agro</title>
+    <meta name="description" content="Lees wat klanten in Noord-Brabant zeggen over de diensten van Musters Agro.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Removed old page-header style to use global one from style.css */
+
+        .reviews-stats {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-box {
+            background: var(--color-white);
+            padding: 1.5rem 2.5rem;
+            border-radius: 50px;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        .stat-box .stars i {
+            width: 24px;
+            height: 24px;
+        }
+
+        .reviews-grid {
+            column-count: 3;
+            column-gap: 2rem;
+        }
+
+        @media (max-width: 992px) {
+            .reviews-grid {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .reviews-grid {
+                column-count: 1;
+            }
+        }
+
+        .review-card {
+            background: var(--color-white);
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            break-inside: avoid;
+            margin-bottom: 2rem;
+            position: relative;
+            border-top: 4px solid var(--color-secondary);
+        }
+
+        .quote-icon {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            color: rgba(194, 155, 12, 0.15);
+            /* Faded Gold */
+            width: 48px;
+            height: 48px;
+        }
+
+        .review-text {
+            font-size: 1.05rem;
+            color: var(--color-text);
+            font-style: italic;
+            margin: 1.5rem 0;
+            line-height: 1.7;
+        }
+
+        .review-author {
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        .review-service {
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 0.2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Musters<span>Agro</span></a>
+
+            <nav class="nav-desktop">
+                <a href="index.html#diensten">Diensten</a>
+                <a href="over-ons.html">Over Ons</a>
+                <a href="projecten.html">Projecten</a>
+                <a href="reviews.html">Reviews</a>
+            </nav>
+
+            <a href="tel:0619550775" class="btn btn-primary btn-nav">
+                <i data-lucide="phone"></i> 06-19550775
+            </a>
+
+            <button class="menu-toggle" aria-label="Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html#diensten" class="mobile-link">Diensten</a>
+        <a href="over-ons.html" class="mobile-link">Over Ons</a>
+        <a href="projecten.html" class="mobile-link">Projecten</a>
+        <a href="reviews.html" class="mobile-link">Reviews</a>
+        <a href="tel:0619550775" class="btn btn-primary">Bel Direct</a>
+    </div>
+
+    <main>
+        <section class="page-header page-header-reviews">
+            <div class="container">
+                <h1 class="page-title">Klantreviews</h1>
+                <p>Ontdek waarom klanten in Noord-Brabant voor ons kiezen.</p>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <div class="container">
+
+                <div class="reviews-stats animate-up">
+                    <div class="stat-box">
+                        <span class="stat-score">5.0</span>
+                        <div class="stars">
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <i data-lucide="message-square" class="stat-icon"></i>
+                        100% Tevredenheid
+                    </div>
+                </div>
+
+                <div class="reviews-grid">
+                    <!-- Review 1 -->
+                    <div class="review-card animate-up delay-1">
+                        <i data-lucide="quote" class="quote-icon"></i>
+                        <div class="stars">
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                        </div>
+                        <p class="review-text">"Mike heeft bij ons fantastisch werk geleverd met het verwijderen van een
+                            enorme beukenhaag en diverse stobben. Alles is super netjes achtergelaten. Echte aanrader
+                            als je een harde werker zoekt!"</p>
+                        <div class="review-author">Familie de Vries</div>
+                        <div class="review-service">Groenverwijdering</div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-card animate-up delay-2">
+                        <i data-lucide="quote" class="quote-icon"></i>
+                        <div class="stars">
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                        </div>
+                        <p class="review-text">"Heel blij met het miniloonwerk van Musters Agro. Onze paardenbak was een
+                            modderpoel maar ligt er nu weer snaarstrak bij. Snelle communicatie en komt afspraken na."
+                        </p>
+                        <div class="review-author">Manege 't Gouden Hoefijzer</div>
+                        <div class="review-service">Miniloonwerk</div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="review-card animate-up delay-3">
+                        <i data-lucide="quote" class="quote-icon"></i>
+                        <div class="stars">
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                        </div>
+                        <p class="review-text">"Vooraf was duidelijk wat de kosten zouden zijn en hoe lang het zou
+                            duren. Het afgraven van onze voortuin ging soepeler dan we dachten dankzij de compacte
+                            graafmachine. Top service!"</p>
+                        <div class="review-author">J. van den Berg</div>
+                        <div class="review-service">Grondwerk</div>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="review-card animate-up">
+                        <i data-lucide="quote" class="quote-icon"></i>
+                        <div class="stars">
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                        </div>
+                        <p class="review-text">"Mike is een nuchtere gozer die precies weet wat hij doet. Hij denkt mee
+                            in oplossingen in plaats van problemen. Tuinrenovatie is perfect uitgevoerd."</p>
+                        <div class="review-author">P. Jansen</div>
+                        <div class="review-service">Terreinrenovatie</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section">
+            <div class="container text-center">
+                <h2>Wilt u ook een zorgeloos project?</h2>
+                <div class="cta-buttons">
+                    <a href="tel:0619550775" class="btn btn-primary btn-large">
+                        <i data-lucide="phone"></i> 06-19550775
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3 class="footer-brand">Musters<span>Agro</span></h3>
+                <p>Eenmanszaak gevestigd in Noord-Brabant. Uw specialist in grondverzet, groenverwijdering en
+                    miniloonwerk.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Diensten</h4>
+                <ul>
+                    <li><a href="miniloonwerk.html">Miniloonwerk</a></li>
+                    <li><a href="groenverwijdering.html">Groenverwijdering</a></li>
+                    <li><a href="boomstobben.html">Boomstobben frezen</a></li>
+                    <li><a href="grondwerk.html">Grondwerk</a></li>
+                    <li><a href="terreinrenovatie.html">Terreinrenovatie</a></li>
+                    <li><a href="trommelzeef.html">Trommelzeefverhuur</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="contact-list">
+                    <li><i data-lucide="map-pin"></i> Regio Noord-Brabant</li>
+                    <li><i data-lucide="phone"></i> <a href="tel:0619550775">06-19550775</a></li>
+                    <li><i data-lucide="mail"></i> <a href="mailto:info@mustersagro.nl">info@mustersagro.nl</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy;
+                <script>document.write(new Date().getFullYear())</script> Musters Agro. Alle rechten voorbehouden.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

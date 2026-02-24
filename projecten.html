@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecten | Musters Agro</title>
+    <meta name="description"
+        content="Bekijk onze afgeronde projecten in grondwerk, groenverwijdering en terreinrenovatie door Musters Agro.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Removed old page-header style to use global one from style.css */
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .project-card {
+            background: var(--color-white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .project-image {
+            height: 250px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.05);
+        }
+
+        .project-info {
+            padding: 1.5rem;
+        }
+
+        .project-tag {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--color-secondary);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        a.project-card {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Before/After Tag styles */
+        .badge-ba {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: var(--color-secondary);
+            color: var(--color-white);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Musters<span>Agro</span></a>
+
+            <nav class="nav-desktop">
+                <a href="index.html#diensten">Diensten</a>
+                <a href="over-ons.html">Over Ons</a>
+                <a href="projecten.html">Projecten</a>
+                <a href="reviews.html">Reviews</a>
+            </nav>
+
+            <a href="tel:0619550775" class="btn btn-primary btn-nav">
+                <i data-lucide="phone"></i> 06-19550775
+            </a>
+
+            <button class="menu-toggle" aria-label="Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html#diensten" class="mobile-link">Diensten</a>
+        <a href="over-ons.html" class="mobile-link">Over Ons</a>
+        <a href="projecten.html" class="mobile-link">Projecten</a>
+        <a href="reviews.html" class="mobile-link">Reviews</a>
+        <a href="tel:0619550775" class="btn btn-primary">Bel Direct</a>
+    </div>
+
+    <main>
+        <section class="page-header page-header-projects">
+            <div class="container">
+                <h1 class="page-title">Onze Projecten</h1>
+                <p>Een greep uit het werk waar we trots op zijn.</p>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Portfolio</span>
+                    <h2>Recent Bekroond Werk</h2>
+                    <p>Beelden zeggen vaak meer dan woorden. Bekijk hier hoe we tuinen, terreinen en percelen succesvol
+                        hebben getransformeerd.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card animate-up">
+                        <div class="project-image">
+                            <!-- Placeholder -->
+                            <img src="assets/ph-grondwerk.svg"
+                                alt="Projectfoto grondwerk (placeholder)">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Grondwerk</span>
+                            <h3 class="project-title">Egaliseren voor Nieuwbouw</h3>
+                            <p class="service-text">Compleet terrein afgegraven, gestabiliseerd en bouwrijp gemaakt in
+                                een krappe woonwijk.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card animate-up delay-1">
+                        <div class="project-image">
+                            <span class="badge-ba">Voor / Na Effect</span>
+                            <img src="assets/ph-stobben.svg"
+                                alt="Projectfoto stobbenfrezen (placeholder)">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Boomstobben</span>
+                            <h3 class="project-title">Verwijderen van 15 Boomstobben</h3>
+                            <p class="service-text">Met de compacte frees door een smalle poort gereden om een complete
+                                bossingel in een achtertuin te verwijderen.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <a href="project-paardenbak.html" class="project-card animate-up delay-2">
+                        <div class="project-image">
+                            <span class="badge-ba">Nieuw Project</span>
+                            <img src="assets/ph-paardenbak.svg"
+                                alt="Projectfoto paardenbak (placeholder)">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Miniloonwerk</span>
+                            <h3 class="project-title">Aanleg Paardenbak Roosendaal</h3>
+                            <p class="service-text">Complete aanleg van een professionele eb- en vloed rijbaan inclusief
+                                lasergestuurd egaliseren.</p>
+                            <span class="service-link">Bekijk Casestudy <i
+                                    data-lucide="arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <!-- Project 4 -->
+                    <div class="project-card animate-up">
+                        <div class="project-image">
+                            <img src="assets/ph-groen.svg"
+                                alt="Projectfoto groenverwijdering (placeholder)">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Terreinrenovatie</span>
+                            <h3 class="project-title">Ontruiming Verwilderde Tuin</h3>
+                            <p class="service-text">Binnen twee dagen de gehele wildgroei verwijderd en het groenafval
+                                verantwoord afgevoerd.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta section">
+            <div class="container text-center">
+                <h2>Iets vergelijkbaars nodig voor uw terrein?</h2>
+                <div class="cta-buttons">
+                    <a href="tel:0619550775" class="btn btn-primary btn-large">
+                        <i data-lucide="phone"></i> 06-19550775
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3 class="footer-brand">Musters<span>Agro</span></h3>
+                <p>Eenmanszaak gevestigd in Noord-Brabant. Uw specialist in grondverzet, groenverwijdering en
+                    miniloonwerk.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Diensten</h4>
+                <ul>
+                    <li><a href="miniloonwerk.html">Miniloonwerk</a></li>
+                    <li><a href="groenverwijdering.html">Groenverwijdering</a></li>
+                    <li><a href="boomstobben.html">Boomstobben frezen</a></li>
+                    <li><a href="grondwerk.html">Grondwerk</a></li>
+                    <li><a href="terreinrenovatie.html">Terreinrenovatie</a></li>
+                    <li><a href="trommelzeef.html">Trommelzeefverhuur</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="contact-list">
+                    <li><i data-lucide="map-pin"></i> Regio Noord-Brabant</li>
+                    <li><i data-lucide="phone"></i> <a href="tel:0619550775">06-19550775</a></li>
+                    <li><i data-lucide="mail"></i> <a href="mailto:info@mustersagro.nl">info@mustersagro.nl</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy;
+                <script>document.write(new Date().getFullYear())</script> Musters Agro. Alle rechten voorbehouden.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
