@@ -1,17 +1,10 @@
-/**
- * Main JavaScript for Musters Agro Website
- */
-
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Initialize Lucide Icons
     lucide.createIcons();
 
-    // 2. Mobile Menu Toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const mobileMenu = document.querySelector('.mobile-menu');
     const menuIcon = menuToggle.querySelector('i');
 
-    // Create overlay element dynamically
     const overlay = document.createElement('div');
     overlay.className = 'mobile-menu-overlay';
     document.body.appendChild(overlay);
@@ -23,10 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileMenu.classList.toggle('open');
         overlay.classList.toggle('open');
 
-        // Change icon between menu and close
         if (isMenuOpen) {
             menuIcon.setAttribute('data-lucide', 'x');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
+            document.body.style.overflow = 'hidden'; 
         } else {
             menuIcon.setAttribute('data-lucide', 'menu');
             document.body.style.overflow = '';
@@ -39,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isMenuOpen) toggleMenu();
     });
 
-    // Close mobile menu when a link is clicked
     const mobileLinks = document.querySelectorAll('.mobile-link');
     mobileLinks.forEach(link => {
         link.addEventListener('click', () => {
@@ -47,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 3. Header Scroll Effect
     const header = document.querySelector('.header');
 
     window.addEventListener('scroll', () => {
@@ -58,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 4. Smooth Scrolling for Anchor Links (fallback for browsers without CSS smooth scroll)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const targetId = this.getAttribute('href');
@@ -74,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 5. Scroll Reveal Animations
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -94,7 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
     animatedElements.forEach((el, index) => {
         if (!el.classList.contains('animate-up')) {
             el.classList.add('animate-up');
-            // Add staggered delay
             const delayClass = `delay-${(index % 4) + 1}`;
             el.classList.add(delayClass);
         }
